@@ -1,5 +1,19 @@
 # Pratica Logica Digital
 Descrição
+
+## Dicas para Utilizar o Quartus
+
+Aqui estão algumas dicas úteis para facilitar o uso do Quartus:
+
+1. **Utilize Fios Wire**: Use fios do tipo wire para conectar diferentes partes do circuito. Isso ajuda a manter o design organizado e facilita a visualização das conexões.
+
+2. **Copia e Cola nos Pinos**: Para agilizar a configuração dos pinos, utilize a função de copiar e colar. Isso é especialmente útil quando você tem múltiplos pinos a serem configurados de forma semelhante, economizando tempo e reduzindo erros.
+
+3. **Simplificação Booleana**: Utilize ferramentas online para simplificação de expressões booleanas, como o site [Boolean Algebra](https://www.boolean-algebra.com/). Isso ajuda a otimizar as expressões lógicas antes de implementá-las no Quartus, tornando o design mais eficiente.
+
+Seguir essas dicas pode melhorar significativamente a sua experiência e eficiência ao trabalhar com o Quartus, facilitando o desenvolvimento de projetos complexos de forma mais organizada e intuitiva.
+
+
 # Projeto 3: Robô Móvel
 Este projeto implementa um sistema de controle para um robô móvel usando a placa DE0-CV com FPGA Cyclone V. Utiliza três sensores de proximidade (direita, frente e esquerda) e três comandos de deslocamento correspondentes. A lógica de controle, baseada nas leituras dos sensores, define os comandos de movimento para garantir uma navegação eficiente e evitar obstáculos. 
 

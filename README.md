@@ -36,6 +36,5 @@ Os comandos do robô são definidos pelas seguintes expressões lógicas baseada
    - Quando os sensores **D** e **F** estiverem acionados.
    - Quando apenas o sensor **F** estiver acionado.
    - Quando os sensores **E**, **D** e **F** estiverem acionados.
-
-### Observação
-O robô só executa uma tarefa por vez, garantindo que apenas um comando (frente, esquerda ou direita) seja acionado de cada vez com base nas condições dos sensores.
+     
+[Projeto3](https://drive.google.com/file/d/1TZEfIjE5YjMzUMGG7OkXJ11QpQRmGR6_/view?usp=drive_link)

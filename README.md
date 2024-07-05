@@ -18,6 +18,9 @@ Aqui estão algumas dicas úteis para facilitar o uso do Quartus:
 
 3. **Simplificação Booleana**: Utilize ferramentas online para simplificação de expressões booleanas, como o site [Boolean Algebra](https://www.boolean-algebra.com/). Isso ajuda a otimizar as expressões lógicas antes de implementá-las no Quartus, tornando o design mais eficiente.
 
+4. **Como Criar Blocos no Quartus**: A criação de blocos dos circuitos é essencial para projetos mais complexos, assista o [vídeo](https://www.youtube.com/watch?v=yY4Jc4Vc_58) a partir do minuto 4.
+
+
 
 # Projeto 3: Robô Móvel
 Este projeto implementa um sistema de controle para um robô móvel usando a placa DE0-CV com FPGA Cyclone V. Utiliza três sensores de proximidade (direita, frente e esquerda) e três comandos de deslocamento correspondentes. A lógica de controle, baseada nas leituras dos sensores, define os comandos de movimento para garantir uma navegação eficiente e evitar obstáculos. 

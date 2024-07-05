@@ -213,5 +213,59 @@ Este projeto combina lógica booleana e operações aritméticas para implementa
 
 [Video explicando](https://www.youtube.com/watch?v=A25zZZK6Zug&list=PL400nT9WA9li9LjGXqFKlHqRZxryRAomV&index=8)
 
+# Projeto 10: Multiplicador de Quatro Bits
+
+#### Objetivo:
+Projetar e implementar um multiplicador de quatro bits utilizando portas lógicas e registradores para realizar operações de multiplicação binária.
+
+#### Lógica de Controle:
+O multiplicador de quatro bits deve multiplicar dois números binários de quatro bits (A3A2A1A0 e B3B2B1B0), resultando em um produto de até oito bits (P7P6P5P4P3P2P1P0).
+
+##### Multiplicação Binária:
+A multiplicação binária é realizada de maneira semelhante à multiplicação decimal, com produtos parciais sendo somados. Para um multiplicador de quatro bits, utilizamos a soma dos produtos parciais deslocados de acordo com a posição do bit do multiplicando.
+
+##### Funções Lógicas:
+Para cada par de bits dos operandos, a expressão booleana do produto parcial é:
+
+- **Produto Parcial (PP):**
+
+$$ PP_{ij} = A_i \cdot B_j $$
+
+Os produtos parciais são então somados com deslocamentos apropriados para obter o produto final.
+
+##### Circuito de Multiplicação:
+1. **Produtos Parciais:**
+
+$$ PP_0 = A_0 \cdot B $$
+
+$$ PP_1 = A_1 \cdot B \ll 1 $$
+
+$$ PP_2 = A_2 \cdot B \ll 2 $$
+
+$$ PP_3 = A_3 \cdot B \ll 3 $$
+
+   Onde ll indica deslocamento à esquerda.
+
+2. **Soma dos Produtos Parciais:**
+   - Somar os produtos parciais utilizando somadores binários para obter o produto final:
+
+$$ P = PP_0 + PP_1 + PP_2 + PP_3 $$
+
+##### Descrição do Sistema:
+O multiplicador de quatro bits utiliza portas lógicas para calcular os produtos parciais entre cada bit dos operandos. Esses produtos parciais são somados utilizando somadores binários, com deslocamentos apropriados para cada bit de posição. O resultado final é um número binário de até oito bits, representando o produto dos dois números de entrada.
+
+1. **Produtos Parciais:**
+   - Para cada bit Bj de B, calcular PPij = Ai*Bj para todos os bits Ai de A.
+   - Deslocar cada produto parcial PP ij de acordo com a posição do bit Bj.
+
+2. **Soma dos Produtos Parciais:**
+   - Utilizar somadores binários para somar os produtos parciais.
+   - Considerar os deslocamentos durante a soma para garantir o alinhamento correto dos produtos parciais.
+
+[projeto10](https://drive.google.com/file/d/1l1AoApyfAxe9YJHgAycaAavxk0nmuTRO/view?usp=drive_link)
+
+[video explicando](https://www.youtube.com/watch?v=5PVTKN-jxA4&list=PL400nT9WA9li9LjGXqFKlHqRZxryRAomV&index=10)
+
+
 
 

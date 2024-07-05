@@ -1,5 +1,12 @@
 # Pratica Logica Digital
-Descrição
+O objetivo desta página é ajudar os alunos que estão cursando a disciplina de Lógica Digital, reconhecendo que alguns circuitos podem ser realmente desafiadores.
+
+**Aviso:** **NÃO COPIEM OS CIRCUITOS**. O professor utiliza um detector de plágio, então usem essas informações apenas como inspiração para desenvolver seus próprios circuitos.
+
+**Dica:** Aprendam a utilizar o Quartus antes de começar a trabalhar nos projetos. Isso vai economizar muito tempo.
+
+Leiam as dicas a seguir, pois elas irão facilitar bastante o seu trabalho.
+
 
 ## Dicas para Utilizar o Quartus
 
@@ -10,8 +17,6 @@ Aqui estão algumas dicas úteis para facilitar o uso do Quartus:
 2. **Copia e Cola nos Pinos**: Para agilizar a configuração dos pinos, utilize a função de copiar e colar. Isso é especialmente útil quando você tem múltiplos pinos a serem configurados de forma semelhante, economizando tempo e reduzindo erros.
 
 3. **Simplificação Booleana**: Utilize ferramentas online para simplificação de expressões booleanas, como o site [Boolean Algebra](https://www.boolean-algebra.com/). Isso ajuda a otimizar as expressões lógicas antes de implementá-las no Quartus, tornando o design mais eficiente.
-
-Seguir essas dicas pode melhorar significativamente a sua experiência e eficiência ao trabalhar com o Quartus, facilitando o desenvolvimento de projetos complexos de forma mais organizada e intuitiva.
 
 
 # Projeto 3: Robô Móvel

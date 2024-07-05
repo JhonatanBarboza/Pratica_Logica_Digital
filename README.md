@@ -154,7 +154,7 @@ Crie blocos do display de sete segmentos e do subtrator de 1 bit.
 
 [projeto8](https://drive.google.com/file/d/1cDLnJ2DwvvvHsPCmMrWVGv1BA1ZNMy0j/view?usp=drive_link)
 
-# Projeto: Somador-Subtrator de Quatro Bits
+# Projeto 9: Somador-Subtrator de Quatro Bits
 
 #### Objetivo:
 Projetar e implementar um circuito combinacional que funcione tanto como somador subtrator de quatro bits, integrando também um sistema para realizar o complemento de dois quando necessário. O circuito é capaz de tratar sinais em paralelo e exibir os resultados em displays de sete segmentos.
@@ -266,6 +266,73 @@ O multiplicador de quatro bits utiliza portas lógicas para calcular os produtos
 
 [video explicando](https://www.youtube.com/watch?v=5PVTKN-jxA4&list=PL400nT9WA9li9LjGXqFKlHqRZxryRAomV&index=10)
 
+# Projeto 11: Divisor de Quatro Bits
 
+#### Objetivo:
+Projetar e implementar um divisor de quatro bits utilizando portas lógicas e registradores para realizar operações de divisão binária.
+
+#### Lógica de Controle:
+O divisor de quatro bits deve dividir dois números binários de quatro bits (dividendo D3D2D1D0 e divisor V3V2V1V0), resultando em um quociente de quatro bits (Q3Q2Q1Q0) e um resto de quatro bits (R3R2R1R0).
+
+##### Divisão Binária:
+A divisão binária é realizada por meio de subtrações sucessivas, semelhante à divisão decimal. O divisor é subtraído do dividendo até que o dividendo restante seja menor que o divisor. O número de subtrações realizadas é o quociente, e o valor restante é o resto.
+
+##### Funções Lógicas:
+Para cada etapa do processo de divisão, as expressões booleanas envolvem a comparação e a subtração entre o dividendo parcial e o divisor.
+
+##### Circuito de Divisão:
+1. **Inicialização:**
+   - Carregar o dividendo nos registradores de dividendo.
+   - Carregar o divisor nos registradores de divisor.
+   - Inicializar o quociente e o resto com zero.
+
+2. **Subtração e Comparação:**
+   - Subtrair o divisor do dividendo parcial.
+   - Se o resultado da subtração for não negativo, registrar 1 no quociente correspondente e atualizar o dividendo parcial.
+   - Se o resultado da subtração for negativo, registrar 0 no quociente correspondente e restaurar o dividendo parcial original.
+
+3. **Deslocamento:**
+   - Deslocar o dividendo parcial à esquerda e inserir o próximo bit do dividendo.
+   - Repetir o processo até que todos os bits do dividendo sejam processados.
+
+##### Descrição do Sistema:
+O divisor de quatro bits utiliza portas lógicas e registradores para realizar subtrações e comparações sucessivas, determinando o quociente e o resto. O processo envolve a manipulação dos bits do dividendo e do divisor, bem como o uso de operações de deslocamento e subtração.
+
+[projeto11](https://drive.google.com/file/d/1yfGCZWCmPlozqpg5OJucfwjdayX72Nyl/view?usp=drive_link)
+
+[video explicando](https://www.youtube.com/watch?v=RZFIhTT7bKM&list=PL400nT9WA9li9LjGXqFKlHqRZxryRAomV&index=11)
+
+# Projeto 12: Raiz Quadrada de Quatro Bits
+
+#### Objetivo:
+Projetar e implementar um circuito combinacional que calcula a raiz quadrada de um número binário de quatro bits, resultando em uma aproximação da raiz quadrada em um número binário de dois bits.
+
+#### Lógica de Controle:
+O circuito de extração de raiz quadrada deve determinar a raiz quadrada de um número binário de quatro bits (N3N2N1N0), fornecendo um resultado de dois bits (R1R0). O método de cálculo utilizado é baseado no algoritmo de estimativa e correção, semelhante ao método de aproximação sucessiva.
+
+##### Algoritmo de Aproximação Sucessiva:
+Para calcular a raiz quadrada, o algoritmo compara e ajusta sucessivamente possíveis valores da raiz quadrada até encontrar a melhor aproximação.
+
+##### Funções Lógicas:
+Para cada etapa do processo de extração da raiz quadrada, as expressões booleanas envolvem a comparação dos quadrados dos números estimados com o valor original.
+
+##### Circuito de Extração de Raiz Quadrada:
+1. **Inicialização:**
+   - Carregar o número original (N3N2N1N0) no registrador.
+   - Inicializar a estimativa da raiz quadrada (R1R0) com zero.
+
+2. **Estimativa e Correção:**
+   - Estimar o valor da raiz quadrada começando pelo bit mais significativo.
+   - Calcular o quadrado da estimativa atual.
+   - Comparar o quadrado da estimativa com o número original.
+   - Se o quadrado da estimativa for menor ou igual ao número original, manter o bit estimado.
+   - Se o quadrado da estimativa for maior que o número original, ajustar a estimativa removendo o bit atual.
+
+##### Descrição do Sistema:
+O circuito de extração de raiz quadrada utiliza portas lógicas para realizar estimativas sucessivas e comparações, ajustando a estimativa da raiz quadrada até encontrar a melhor aproximação. O processo envolve a manipulação dos bits do número original e das estimativas da raiz quadrada.
+
+[projeto12](https://drive.google.com/file/d/1Nlt7lFiaOIDdrXAFHVuAtx-pp29IYHlc/view?usp=drive_link)
+
+[video explicando](https://www.youtube.com/watch?v=9qRPtWJ4ONw&list=PL400nT9WA9li9LjGXqFKlHqRZxryRAomV&index=12)
 
 

@@ -335,4 +335,42 @@ O circuito de extração de raiz quadrada utiliza portas lógicas para realizar 
 
 [video explicando](https://www.youtube.com/watch?v=9qRPtWJ4ONw&list=PL400nT9WA9li9LjGXqFKlHqRZxryRAomV&index=12)
 
+# Projeto: Comparador de Magnitude com Sinal de Quatro Bits
+
+#### Objetivo:
+Projetar e implementar um comparador de magnitude com sinal de quatro bits utilizando portas lógicas e circuitos sequenciais para determinar a relação de magnitude entre dois números binários com sinal.
+
+#### Lógica de Controle:
+O comparador de magnitude com sinal deve comparar dois números binários de quatro bits (A3A2A1A0 e B3B2B1B0), levando em consideração o bit de sinal (A4 e B4). O resultado deve indicar se o primeiro número é maior, menor ou igual ao segundo número.
+
+##### Comparação Binária com Sinal:
+Para realizar a comparação de números binários com sinal, o bit mais significativo é utilizado como bit de sinal (0 para positivo e 1 para negativo). A comparação deve seguir a ordem:
+
+1. Comparar os bits de sinal.
+2. Se os bits de sinal forem iguais, comparar a magnitude dos bits restantes.
+
+##### Funções Lógicas:
+As expressões booleanas para determinar a relação entre os números envolvem a comparação dos bits de sinal e, se necessário, a comparação da magnitude dos bits restantes.
+
+##### Circuito de Comparação:
+1. **Inicialização:**
+   - Carregar os números A (A3A2A1A0) e B (B3B2B1B0) nos registradores.
+   - Inicializar os sinais de saída (MAIOR, MENOR, IGUAL).
+
+2. **Comparação dos Bits de Sinal:**
+   - Comparar A4 e B4.
+   - Se A4 for 0 e B4 for 1, A é maior.
+   - Se A4 for 1 e B4 for 0, B é maior.
+
+3. **Comparação de Magnitude:**
+   - Se A4 e B4 forem iguais:
+     - Comparar A3 com B3, A2 com B2, A1 com B1, e A0 com B0.
+     - Determinar a relação de magnitude entre os bits.
+
+##### Descrição do Sistema:
+O comparador de magnitude com sinal utiliza portas lógicas para comparar os bits de sinal e a magnitude dos números binários de quatro bits. O processo envolve a comparação bit a bit, considerando primeiro os bits de sinal e depois os bits de magnitude.
+
+[projeto13](https://drive.google.com/file/d/1O0e7s4u11RqUDyDCNR2tGIkEKzSv-cCN/view?usp=drive_link)
+
+[video explicando](https://www.youtube.com/watch?v=q-qf01VqWk8&list=PL400nT9WA9li9LjGXqFKlHqRZxryRAomV&index=12)
 

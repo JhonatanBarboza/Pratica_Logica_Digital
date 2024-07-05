@@ -84,3 +84,74 @@ O sistema recebe como entrada números de 0 a 15 em binário e exibe no display 
 Utilize Fios Wire.
 
 [Projeto4](https://drive.google.com/file/d/1umWQqudsUT-bZy4cZvuFx8Y1rINWC4JW/view?usp=drive_link)
+
+# Projeto 5 e 6: Somador Completo e Somador de Quatro Bits
+
+#### Objetivo:
+Projetar e implementar um somador completo e um somador de quatro bits utilizando portas lógicas.
+
+#### Somador Completo (Full Adder):
+
+##### Lógica de Controle:
+Um somador completo possui três entradas (A, B e Carry-in) e duas saídas (Sum e Carry-out). As expressões booleanas que determinam as saídas são:
+
+- **Soma (Sum):**
+  
+$$ \text{Sum} = A \oplus B \oplus \text{Carry-in} $$
+
+- **Carry-out:**
+
+$$ \text{Carry-out} = (A \cdot B) + (\text{Carry-in} \cdot (A \oplus B)) $$
+
+##### Descrição do Sistema:
+O somador completo é um bloco fundamental para operações aritméticas em circuitos digitais. Ele soma dois bits (A e B) e um bit de transporte de entrada (Carry-in), gerando um bit de soma (Sum) e um bit de transporte de saída (Carry-out). Este módulo é utilizado como base para construir somadores de maior largura de bits, como o somador de quatro bits.
+
+[Projeto5](https://drive.google.com/file/d/1amc8LAnzvjKIWziw4Zhz9InLjIJsGFiv/view?usp=drive_link)
+
+#### Somador de Quatro Bits:
+
+##### Lógica de Controle:
+O somador de quatro bits é composto por quatro somadores completos conectados em série, onde o Carry-out de cada somador é conectado ao Carry-in do próximo somador. 
+
+##### Descrição do Sistema:
+O somador de quatro bits é utilizado para somar dois números binários de quatro bits, resultando em um número binário de quatro bits e um Carry-out final. Este somador é implementado utilizando quatro somadores completos em cascata. A arquitetura garante a correta propagação do transporte entre os somadores, permitindo operações aritméticas precisas em sistemas digitais.
+
+[Projeto6](https://drive.google.com/file/d/1ZQyOSJkar6BQnexGBYvxm1zZ0noW9zhK/view?usp=drive_link)
+
+# Projeto 7 e 8: Subtrator Completo e Subtrator de Quatro Bits
+
+#### Objetivo:
+Projetar e implementar um subtrator completo e um subtrator de quatro bits utilizando portas lógicas.
+
+#### Subtrator Completo (Full Subtractor):
+
+##### Lógica de Controle:
+Um subtrator completo possui três entradas (A, B e Borrow-in) e duas saídas (Difference e Borrow-out). As expressões booleanas que determinam as saídas são:
+
+- **Diferença (Difference):**
+
+$$ \text{Difference} = A \oplus B \oplus \text{Borrow-in} $$
+
+- **Empréstimo (Borrow-out):**
+
+$$ \text{Borrow-out} = (\overline{A} \cdot B) + (\overline{(A \oplus B)} \cdot \text{Borrow-in}) $$
+
+##### Descrição do Sistema:
+O subtrator completo é um bloco fundamental para operações aritméticas em circuitos digitais. Ele subtrai dois bits (A e B) e um bit de empréstimo de entrada (Borrow-in), gerando um bit de diferença (Difference) e um bit de empréstimo de saída (Borrow-out). Este módulo é utilizado como base para construir subtratores de maior largura de bits, como o subtrator de quatro bits.
+
+[projeto7](https://drive.google.com/file/d/1JDW4z7ew8VbFddj8wosn6-r6O-uEW-7H/view?usp=drive_link)
+
+#### Subtrator de Quatro Bits com display de 7 segmentos:
+
+##### Lógica de Controle:
+O subtrator de quatro bits é composto por quatro subtratores completos conectados em série, onde o Borrow-out de cada subtrator é conectado ao Borrow-in do próximo subtrator.
+
+##### Descrição do Sistema:
+O subtrator de quatro bits é utilizado para subtrair dois números binários de quatro bits, resultando em um número binário de quatro bits e um Borrow-out final. Este subtrator é implementado utilizando quatro subtratores completos em cascata. A arquitetura garante a correta propagação do empréstimo entre os subtratores, permitindo operações aritméticas precisas em sistemas digitais.
+
+##### Dica: 
+Crie blocos do display de sete segmentos e do subtrator de 1 bit.
+
+[projeto8](https://drive.google.com/file/d/1cDLnJ2DwvvvHsPCmMrWVGv1BA1ZNMy0j/view?usp=drive_link)
+
+

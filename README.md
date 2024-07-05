@@ -154,4 +154,64 @@ Crie blocos do display de sete segmentos e do subtrator de 1 bit.
 
 [projeto8](https://drive.google.com/file/d/1cDLnJ2DwvvvHsPCmMrWVGv1BA1ZNMy0j/view?usp=drive_link)
 
+# Projeto: Somador-Subtrator de Quatro Bits
+
+#### Objetivo:
+Projetar e implementar um circuito combinacional que funcione tanto como somador subtrator de quatro bits, integrando também um sistema para realizar o complemento de dois quando necessário. O circuito é capaz de tratar sinais em paralelo e exibir os resultados em displays de sete segmentos.
+
+#### Lógica de Controle:
+O circuito combinacional utiliza o complemento de dois para realizar operações de subtração. A operação a ser realizada (soma ou subtração) é determinada por um sinal de controle (SO). 
+
+##### Função de Controle:
+- **SO = 0:** Soma (A + B)
+- **SO = 1:** Subtração (A - B)
+
+##### Lógica do Somador-Subtrator:
+Para realizar subtrações, o circuito converte o subtraendo B para seu complemento de dois quando SO = 1. Para realizar o complemento de dois, um circuito de portas XOR inverte os bits de B e adiciona um bit de 1.
+
+##### Expressões Booleanas:
+Para cada bit \(i\) (de 0 a 3), as expressões booleanas para o somador-subtrator são:
+
+- **Entrada Complementar (B'):**
+
+$$ B_i' = B_i \oplus SO $$
+
+- **Primeiro Bit (LSB):**
+
+$$ S_0 = A_0 \oplus B_0' \oplus SO $$
+  
+$$ \text{Carry/Borrow}_0 = (A_0 \cdot B_0') + (SO \cdot (A_0 \oplus B_0')) $$
+
+- **Segundo Bit:**
+
+$$ S_1 = A_1 \oplus B_1' \oplus \text{Carry/Borrow}_0 $$
+
+$$ \text{Carry/Borrow}_1 = (A_1 \cdot B_1') + (\text{Carry/Borrow}_0 \cdot (A_1 \oplus B_1')) $$
+
+- **Terceiro Bit:**
+
+$$ S_2 = A_2 \oplus B_2' \oplus \text{Carry/Borrow}_1 $$
+$$ \text{Carry/Borrow}_2 = (A_2 \cdot B_2') + (\text{Carry/Borrow}_1 \cdot (A_2 \oplus B_2')) $$
+
+- **Quarto Bit (MSB):**
+
+$$ S_3 = A_3 \oplus B_3' \oplus \text{Carry/Borrow}_2 $$
+
+$$ \text{Carry/Borrow}_3 = (A_3 \cdot B_3') + (\text{Carry/Borrow}_2 \cdot (A_3 \oplus B_3')) $$
+
+- **Bit de Sinal (Overflow):**
+
+$$ S_4 = \text{Carry/Borrow}_3 $$
+
+##### Complemento de Dois:
+Se a subtração resulta em um número negativo (quando o minuendo é menor que o subtraendo), o resultado é expresso em complemento de dois. Para isso, um circuito de portas XOR é utilizado para inverter os bits e adicionar 1.
+
+##### Descrição do Sistema:
+Este projeto combina lógica booleana e operações aritméticas para implementar um sistema versátil capaz de executar tanto soma quanto subtração, com manipulação adequada de números negativos através do complemento de dois.
+
+[Projeto9](https://drive.google.com/file/d/1vdUv6N4Jz5rGFBBJGZDwv4zn41qlkWbb/view?usp=drive_link)
+
+[Video explicando](https://www.youtube.com/watch?v=A25zZZK6Zug&list=PL400nT9WA9li9LjGXqFKlHqRZxryRAomV&index=8)
+
+
 

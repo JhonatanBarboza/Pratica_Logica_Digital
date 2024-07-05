@@ -340,7 +340,7 @@ O circuito de extração de raiz quadrada utiliza portas lógicas para realizar 
 
 [video explicando](https://www.youtube.com/watch?v=9qRPtWJ4ONw&list=PL400nT9WA9li9LjGXqFKlHqRZxryRAomV&index=12)
 
-# Projeto: Comparador de Magnitude com Sinal de Quatro Bits
+# Projeto 13: Comparador de Magnitude com Sinal de Quatro Bits
 
 #### Objetivo:
 Projetar e implementar um comparador de magnitude com sinal de quatro bits utilizando portas lógicas e circuitos sequenciais para determinar a relação de magnitude entre dois números binários com sinal.
